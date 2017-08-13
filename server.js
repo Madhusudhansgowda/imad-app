@@ -53,7 +53,7 @@ app.get('/another-two',function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'another-two.html'));
 });
 app.get('/another-one',function (req,res){
-    res.send(createtemplate(anotherone));
+    res.send(createtemplate(articleone));
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
