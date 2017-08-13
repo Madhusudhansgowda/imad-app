@@ -16,31 +16,32 @@ function createtemplate(data){
 var title=data.title;
 var heading=data.heading;
 var content=data.content;
-var htmlTemplate=`<html>
-<head>
-    <title>
-       ${title}
-    </title>
-    <link href="/ui/style.css" rel="stylesheet" />
-    <style>
-       
-    </style>
-    </head>
-    <body>
-        <div class="container">
-        <div>
-            <a href='/'>home</a>
-        </div>
-        <div>
-            ${heading}
-        </div>
-        <div>
-            ${content}
-        </div>
-        </div>
-    </body>
-</html>
+            var htmlTemplate=`<html>
+                                   <head>
+                                        <title>
+                                                 ${title}
+                                         </title>
+                                            <link href="/ui/style.css" rel="stylesheet" />
+                <style>
+                   
+                </style>
+                </head>
+                <body>
+                    <div class="container">
+                    <div>
+                        <a href='/'>home</a>
+                    </div>
+                    <div>
+                        ${heading}
+                    </div>
+                    <div>
+                        ${content}
+                    </div>
+                    </div>
+                </body>
+            </html>
 `;
+return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
