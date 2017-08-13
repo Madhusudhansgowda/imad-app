@@ -6,14 +6,14 @@ var app = express();
 app.use(morgan('combined'));
 var articles={
     
-article-one:{
+'article-one':{
     title:"Another-one",
     heading:"page content first",
     content:`There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.
 
     There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.`
 },
-article-two:{
+'article-two':{
         title:"Another-Two",
     heading:"page content Second",
     content:`There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.
