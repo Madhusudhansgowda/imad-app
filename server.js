@@ -4,13 +4,22 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleone={
+var articles={
+    
+articleone:{
     title:"Another-one",
     heading:"page content first",
     content:`There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.
 
     There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.`
+},
+articleTwo:{
+        title:"Another-Two",
+    heading:"page content Second",
+    content:`There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.
+
+    There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.`
+}
 };
 function createtemplate(data){
 var title=data.title;
@@ -53,7 +62,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/another-two',function (req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'another-two.html'));
+     res.send(createtemplate(articleTwo));
 });
 app.get('/another-one',function (req,res){
     res.send(createtemplate(articleone));
