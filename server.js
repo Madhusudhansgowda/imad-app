@@ -32,7 +32,9 @@ var content=data.content;
                         <a href='/'>home</a>
                     </div>
                     <div>
+                    <h3>
                         ${heading}
+                        </h3>
                     </div>
                     <div>
                         ${content}
