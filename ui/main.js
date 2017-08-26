@@ -17,8 +17,7 @@ button.onclick=function()
             }
         }
     };
-    request.open('GET','http://madhusudhansgowda123.imad.hasura-app.io');
-    request.send(null);
+    
     
 };
 var inputvalue=document.getElementById("name");
@@ -35,3 +34,5 @@ submit.onclick=function(){
     var ul=document.getElementById("namelist");
     ul.innerHTML=list;
 };
+request.open('GET','http://madhusudhansgowda123.imad.hasura-app.io/dubmit-name?name='+vlue,true);
+    request.send(null);
