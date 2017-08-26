@@ -49,11 +49,11 @@ function createtemplate(data){
                     </div>
                     <div>
                     <h3>
-                        ${heading}
+                       
                         </h3>
                     </div>
                     <div>
-                        ${content}
+                       
                     </div>
                     </div>
                 </body>
