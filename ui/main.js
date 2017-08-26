@@ -25,7 +25,8 @@ var vlue=inputvalue.value;
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
-    var names=['name1','name2','name3'];
+    var names=request.responseText;
+    names=JSON.parse(names);
     var list='';
     for(var i=0;i<names.length;i++)
     {
