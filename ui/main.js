@@ -21,8 +21,7 @@ button.onclick=function()
     request.open('GET','http://madhusudhansgowda123.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var inputvalue=document.getElementById("name");
-var vlue=inputvalue.value;
+
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
@@ -45,7 +44,8 @@ submit.onclick=function(){
             }
         }
     };
-    
+    var inputvalue=document.getElementById("name");
+var vlue=inputvalue.value;
 
 request.open('GET','http://madhusudhansgowda123.imad.hasura-app.io/submit-name?name='+vlue,true);
     request.send(null);
