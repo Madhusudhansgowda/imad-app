@@ -56,6 +56,7 @@ function createtemplate(data){
                        
                     </div>
                     </div>
+                    <script></script>
                 </body>
             </html>
 `;
