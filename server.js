@@ -29,13 +29,13 @@ var articles={
 }
 };
 function createtemplate(data){
-var title=data.title;
+//var title=data.title;
 var heading=data.heading;
 var content=data.content;
             var htmlTemplate=`<html>
                                    <head>
                                         <title>
-                                                 ${title}
+                                              
                                          </title>
                                             <link href="/ui/style.css" rel="stylesheet" />
                 <style>
