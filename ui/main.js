@@ -49,6 +49,7 @@ submit.onclick=function(){
         }
     };
     
-};
+
 request.open('GET','http://madhusudhansgowda123.imad.hasura-app.io/submit-name/name='+vlue,true);
     request.send(null);
+};
