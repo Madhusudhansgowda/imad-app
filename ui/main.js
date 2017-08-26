@@ -22,7 +22,7 @@ button.onclick=function()
     
 };
 var input=document.getElementById("input");
-var vlue=input.text;
+var vlue=input.value;
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
