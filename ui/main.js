@@ -21,8 +21,8 @@ button.onclick=function()
     request.send(null);
     
 };
-var input=document.getElementById("input");
-var vlue=input.value;
+var inputvalue=document.getElementById("name");
+var vlue=inputvalue.value;
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
