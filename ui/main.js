@@ -1,4 +1,4 @@
-console.log('Loaded!');
+
 var counter=0;
 var button=documnet.getelementbyid("button");
 button.onclick=function()
