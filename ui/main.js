@@ -21,3 +21,17 @@ button.onclick=function()
     request.send(null);
     
 };
+var input=document.getElementById("input");
+var vlue=input.text;
+var submit=document.getElementById("submit");
+submit.onclick=function(){
+    
+    var names=["name","name","name"];
+    var list='';
+    for(var i=0;i<names.length;i++)
+    {
+        list='<li>'+names[i]+'</li>'
+    }
+    var ul=document.getElementById("namelist");
+    ul.innerHTML=list;
+};
