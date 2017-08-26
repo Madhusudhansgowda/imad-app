@@ -28,7 +28,7 @@ var articles={
     There are a number of implementations of the BeanFactory interface that are come straight out-of-the-box with Spring. The most commonly used BeanFactory implementation is the XmlBeanFactory class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.`
 }
 };
-//function createtemplate(data){
+function createtemplate(data){
 //var title=data.title;
 var heading=data.heading;
 var content=data.content;
