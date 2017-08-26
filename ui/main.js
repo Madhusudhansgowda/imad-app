@@ -1,6 +1,5 @@
-
-var counter=0;
 var button=documnet.getelementbyid("button");
+var counter=0;
 button.onclick=function()
 {
     counter+=1;
