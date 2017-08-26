@@ -26,9 +26,6 @@ var vlue=inputvalue.value;
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
-   
-    names=JSON.parse(names);
-    
      var request=XMLHttpRequest();
     request.onreadystatuschange=function()
     {
