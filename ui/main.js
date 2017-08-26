@@ -26,7 +26,7 @@ var vlue=inputvalue.value;
 var submit=document.getElementById("submit");
 submit.onclick=function(){
     
-     var request=XMLHttpRequest();
+     var request=new XMLHttpRequest();
     request.onreadystatuschange=function()
     {
         if(request.readyState==XMLHttpRequest.Done)
